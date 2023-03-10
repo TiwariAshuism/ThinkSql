@@ -1,6 +1,6 @@
 /* write a update statement to update city as null for order ids :  CA-2020-161389 , US-2021-156909 */
 
-update orders set City=null where order_id in ('CA-2020-161389','US-2021-156909')
+update orders set City = null where order_id in ('CA-2020-161389','US-2021-156909')
 
 /* write a query to find orders where city is null (2 rows) */
 
@@ -10,7 +10,7 @@ select * from orders where city is null
 
 select category, sum(profit) as total_profit, min(order_date) as First_order, max(order_date) as Latest_order from orders group by category; 
 
-select * from orders where state in ('O%');
+
 
 
 
@@ -42,7 +42,7 @@ having count(1)=2 */
 /* write a query to find total number of products in each category. */
 
 
-
+select * from orders;
 
 
 /* write a query to find top 5 sub categories in west region by total quantity sold */
