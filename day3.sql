@@ -6,12 +6,9 @@
 -- 1- write a query to get region wise count of
 -- return orders
 
-select region, count(distinct o.order_id) as no_of_return_orders
-from orders o
-    inner join returns r on o.order_id=r.order_id
-group by region
+select region, count(distinct o.order_id) as no_of_return_orders from orders inner join returns r on o.order_id=r.order_id group by region;
 
-
+SELECT * from orders;
 -- 2- write a query to get category wise sales of orders that were not returned
 
 select category, sum(o.sales) as total_sales

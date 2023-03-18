@@ -12,8 +12,6 @@ select category, sum(profit) as total_profit, min(order_date) as First_order, ma
 
 
 
-
-
 /* write a query to find sub-categories where average profit is more than the half of the max profit in that sub-category */
 
 
